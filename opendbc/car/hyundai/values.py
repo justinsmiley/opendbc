@@ -598,6 +598,13 @@ class CAR(Platforms):
     GENESIS_G70.specs,
     flags=HyundaiFlags.MANDO_RADAR,
   )
+  # smileypilot: one specific car (2022 G70 3.3T), split from GENESIS_G70_2020 so it can carry its own torque tune.
+  # Matched by its own firmware in fingerprints.py; same specs/flags as GENESIS_G70_2020.
+  GENESIS_G70_2022_33T = HyundaiPlatformConfig(
+    [HyundaiCarDocs("Genesis G70 3.3T 2022", "All", car_parts=CarParts.common([CarHarness.hyundai_l]))],
+    GENESIS_G70.specs,
+    flags=HyundaiFlags.MANDO_RADAR,
+  )
   GENESIS_GV70_1ST_GEN = HyundaiCanFDPlatformConfig(
     [
       # TODO: Hyundai P is likely the correct harness for HDA II for 2.5T (unsupported due to missing ADAS ECU, is that the radar?)

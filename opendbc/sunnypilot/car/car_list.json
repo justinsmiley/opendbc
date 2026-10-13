@@ -820,6 +820,16 @@
     ],
     "package": "Adaptive Cruise Control with Lane Centering"
   },
+  "Genesis G70 3.3T 2022": {
+    "platform": "GENESIS_G70_2022_33T",
+    "make": "Genesis",
+    "brand": "hyundai",
+    "model": "G70 3.3T",
+    "year": [
+      "2022"
+    ],
+    "package": "All"
+  },
   "Genesis G70 2018": {
     "platform": "GENESIS_G70",
     "make": "Genesis",

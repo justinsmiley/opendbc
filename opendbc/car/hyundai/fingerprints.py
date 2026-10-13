@@ -522,6 +522,18 @@ FW_VERSIONS = {
       b'\xf1\x00IK  MFC  AT USA LHD 1.00 1.04 99211-G9000 220401',
     ],
   },
+  # smileypilot: firmware read from the car's own logs (all 17 routes identical)
+  CAR.GENESIS_G70_2022_33T: {
+    (Ecu.eps, 0x7d4, None): [
+      b'\xf1\x00IK  MDPS R 1.00 5.06 57700-G9320 4I2VL506',
+    ],
+    (Ecu.fwdRadar, 0x7d0, None): [
+      b'\xf1\x00IK__ SCC FHCUP      1.00 1.00 99110-G9100         ',
+    ],
+    (Ecu.fwdCamera, 0x7c4, None): [
+      b'\xf1\x00IK  MFC  AT USA LHD 1.00 1.02 99211-G9000 210118',
+    ],
+  },
   CAR.GENESIS_G80: {
     (Ecu.fwdRadar, 0x7d0, None): [
       b'\xf1\x00DH__ SCC F-CU-      1.00 1.01 96400-B1110         ',
